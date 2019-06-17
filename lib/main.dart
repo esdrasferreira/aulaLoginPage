@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
       resizeToAvoidBottomPadding: false,
       body: Container(
         padding: EdgeInsets.only(
-          top: 100.0,
+          top: 50.0,
           right: 20.0,
           left: 20.0,
           bottom: 20.0,
@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
-              radius: 60.0,
+              radius: 50.0,
               backgroundImage: AssetImage('assets/images/jedhi.jpg'),
             ),
             SizedBox(
@@ -111,6 +111,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget buildTextField(String hintText) {
     return TextField(
+      style: TextStyle(color: Colors.white),
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.white),
